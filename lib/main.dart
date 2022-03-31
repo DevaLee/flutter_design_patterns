@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_design_patterns/creations/abstract_factory.dart';
+import 'package:flutter_design_patterns/creations/Builder/builder.dart';
+import 'package:flutter_design_patterns/creations/abstract_class/abstract_factory.dart';
 
 void main() {
   runApp(const MyApp());
@@ -82,9 +83,12 @@ class _MyHomePageState extends State<MyHomePage> {
         // in the middle of the parent.
         child: ListView(
           children: [
-            CupertinoButton(
-                child: const Text("Abstract Factory"),
-                onPressed: () => toAbstractFactoryPage(context))
+            buildListItemFactory("Abstract Factory", () {
+              toAbstractFactoryPage(context);
+            }),
+            buildListItemFactory("Builder", () {
+              toBuilderFactoryPage(context);
+            })
           ],
         ),
       ),
@@ -96,7 +100,22 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  Widget buildListItemFactory(String title, void Function()? onPress) {
+    return Column(
+      children: [
+        const SizedBox(height: 10),
+        CupertinoButton(child: Text(title), onPressed: onPress)
+      ],
+    );
+  }
+
   void toAbstractFactoryPage(BuildContext context) {
+    print('abstract page');
     Navigator.of(context).push(AbstractFactoryPage.route());
+  }
+
+  void toBuilderFactoryPage(BuildContext context) {
+    print("Builder Page");
+    Navigator.of(context).push(BuilderPatternPage.route());
   }
 }

@@ -16,15 +16,16 @@ class _AbstractFactoryPageState extends State<AbstractFactoryPage> {
     MaterialIWidgetsFactory(),
     CupertinoWidgetsFactory()
   ];
-  int groupValue = 1;
+  int groupValue = 0;
 
   int _selectedFactoryIndex = 0;
   late IActivityIndicator _activityIndicator;
   late ISlider _slider;
+  late ISwitch _switch;
+
   double _sliderValue = 50.0;
   String get _sliderValueString => _sliderValue.toStringAsFixed(0);
 
-  late ISwitch _switch;
   bool _switchValue = false;
   String get _switchValueString => _switchValue ? "ON" : "OFF";
 
@@ -33,6 +34,8 @@ class _AbstractFactoryPageState extends State<AbstractFactoryPage> {
     // TODO: implement initState
     super.initState();
     _createWidgets();
+
+    // MaterialPageRoute()
   }
 
   void _createWidgets() {
