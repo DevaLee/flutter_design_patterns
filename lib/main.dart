@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_design_patterns/creations/Builder/builder.dart';
+import 'package:flutter_design_patterns/creations/Prototype/prototype_page.dart';
 import 'package:flutter_design_patterns/creations/abstract_class/abstract_factory.dart';
 
 void main() {
@@ -88,10 +89,14 @@ class _MyHomePageState extends State<MyHomePage> {
             }),
             buildListItemFactory("Builder", () {
               toBuilderFactoryPage(context);
-            })
+            }),
+            buildListItemFactory('Prototype', () {
+              toPrototype(context);
+            }),
           ],
         ),
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
@@ -110,12 +115,14 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void toAbstractFactoryPage(BuildContext context) {
-    print('abstract page');
     Navigator.of(context).push(AbstractFactoryPage.route());
   }
 
   void toBuilderFactoryPage(BuildContext context) {
-    print("Builder Page");
     Navigator.of(context).push(BuilderPatternPage.route());
+  }
+
+  void toPrototype(BuildContext context) {
+    Navigator.of(context).push(PrototypePage.route());
   }
 }

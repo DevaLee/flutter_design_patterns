@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9a10c36-7d26-495c-8c8c-3cc02e68f5f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/creations/Builder/builder.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/creations/Builder/burger_infomation_column.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/creations/Builder/burger_maker/burger.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/creations/Builder/burger_maker/burger_builder.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/creations/Builder/burger_maker/buyer_maker.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/creations/Builder/burger_maker/ingredient.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/flutter_design_patterns_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/flutter_design_patterns_android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/creations/abstract_factory.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/creations/abstract_class/abstract_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/creations/Prototype/circle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/creations/Prototype/prototype_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/creations/Prototype/rectangle.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/creations/Prototype/shape.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +46,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="flutter.preview.tool.window.visible" value="true" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
